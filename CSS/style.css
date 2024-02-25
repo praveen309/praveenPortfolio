@@ -1,0 +1,31 @@
+.gradient-text {
+    background: linear-gradient(45deg, #f41462, #e1e42f);
+    background-size: 200%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: gradientAnimation 2s infinite alternate;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0%;
+    }
+
+    100% {
+        background-position: 100%;
+    }
+}
+
+
+.hidden {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
