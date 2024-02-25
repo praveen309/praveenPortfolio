@@ -17,6 +17,64 @@
     }
 }
 
+.my-skills {
+    text-align: center;
+    font-size: 2.8vw;
+    letter-spacing: 1px;
+    margin-bottom: 3.9vw;
+}
+
+.my-skills::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 37.84vw;
+    height: 3px;
+}
+
+.grid {
+    display: grid;
+    grid-gap: 5vw;
+    grid-template-columns: auto auto auto auto;
+}
+
+.card-1 {
+    background: transparent;
+    height: 12vw;
+    width: 13.6vw;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border: 0.24vw solid #898689;
+    transition: transform .5s ease-out;
+    -moz-box-shadow: 0 0 20px #989097;
+    -webkit-box-shadow: 0 0 20px #7b737a;
+    box-shadow: 0 0 1.22vw #929091;
+    border-radius: 5px;
+}
+
+.card-1:hover {
+    transform: scale(1.1);
+}
+
+.icon-img {
+    width: 6.793vw;
+}
+
+.icon-name {
+    color: var(--primary-color);
+    font-size: 1.222vw;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+#format {
+    padding-left: 120px;
+    padding-right: 100px;
+    margin-bottom: 30px;
+}
+
 
 .hidden {
     opacity: 0;
@@ -28,4 +86,45 @@
 .visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+
+@media screen and (max-width:800px) {
+
+    .grid {
+        display: grid;
+        grid-gap: 8vw;
+        grid-template-columns: auto auto;
+    }
+
+    .my-skills {
+        font-size: 8.9vw;
+        border-bottom: 1px solid #514f4f;
+        text-align: center;
+    }
+
+    .my-skills::after {
+        display: block;
+        position: absolute;
+        width: 49.1vw;
+        height: 3px;
+        background: #ff00e3;
+    }
+
+    .card-1 {
+        height: 17vw;
+        width: 20.6vw;
+    }
+
+    .card-1:hover {
+        transform: scale(1.05);
+    }
+
+    .icon-img {
+        width: 9.793vw;
+    }
+
+    .icon-name {
+        font-size: 2.222vw;
+    }
 }
