@@ -128,3 +128,9 @@
         font-size: 2.222vw;
     }
 }
+
+.dark-mode {
+    background-color: black;
+    color: white;
+    }
+
